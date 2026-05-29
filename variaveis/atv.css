@@ -1,7 +1,7 @@
 :root{
     --cor-primaria: #b30000;
     --cor-secundaria: #ff1a1a;
-    --cor-fundo: #0d0d0d;
+    --cor-fundo: #000000;
     --cor-caixa: #1a1a1a;
     --cor-texto: #f5f5f5;
 
@@ -22,6 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .caixa{
@@ -50,15 +51,16 @@ p{
 button{
     background-color: var(--cor-primaria);
     color: white;
-
     border: none;
     padding: 12px 22px;
-
     border-radius: var(--borda-radius);
     cursor: pointer;
-
-    transition: 0.3s;
     font-size: 16px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
 }
 
 button:hover{
@@ -66,4 +68,25 @@ button:hover{
     transform: scale(1.05);
 
     box-shadow: 0 0 15px red;
+}
+
+.conteudo{
+     border: 2px solid red;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px red;
+
+}
+
+img{
+display: block;
+    margin: 0 auto;
+} 
+ 
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
