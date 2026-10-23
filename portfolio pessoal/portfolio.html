@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Kaio, desenvolvedor em formação. Conheça meus projetos e minha evolução na programação.">
+    <title>Minha Vitrine Dev | Kaio</title>
+
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="navbar container" aria-label="Navegação principal">
+            <a href="#inicio" class="logo">Minha<span>Vitrine</span>Dev.</a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato" class="link-contato">Contato</a></li>
+            </ul>
+
+            <button class="tema-toggle" id="tema-toggle"
+                type="button" aria-label="Ativar tema claro">
+                ☀
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio container" id="inicio">
+            <div class="inicio-conteudo">
+                <p class="etiqueta">DESENVOLVIMENTO WEB</p>
+
+                <p class="saudacao" id="saudacao">
+                    Olá! Seja bem-vindo ao meu portfólio.
+                </p>
+
+                <h1>Olá, eu sou o <span>Kaio</span>.</h1>
+
+                <h2>Desenvolvedor em formação</h2>
+
+                <p class="descricao">
+                    Estou aprendendo programação e desenvolvendo projetos
+                    para transformar ideias em experiências digitais.
+                    Este é o espaço onde apresento meus trabalhos e minha
+                    evolução na tecnologia.
+                </p>
+
+                <div class="botoes">
+                    <a href="#projetos" class="botao botao-principal">
+                        Conhecer projetos
+                    </a>
+
+                    <a href="#sobre" class="botao botao-secundario">
+                        Sobre mim
+                    </a>
+                </div>
+
+                <p class="status">
+                    <span class="status-ponto"></span>
+                    Praticando, aprendendo e evoluindo.
+                </p>
+            </div>
+
+            <div class="inicio-visual" aria-label="Ilustração de programação">
+                <div class="circulo circulo-externo"></div>
+
+                <div class="janela-codigo">
+                    <div class="janela-topo">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>kaio.dev</p>
+                    </div>
+
+                    <div class="codigo">
+                        <p><span class="codigo-roxo">const</span> dev = {</p>
+                        <p class="recuo">nome: <span class="codigo-verde">"Kaio"</span>,</p>
+                        <p class="recuo">nivel: <span class="codigo-verde">"Praticando"</span>,</p>
+                        <p class="recuo">foco: <span class="codigo-verde">"Web"</span>,</p>
+                        <p class="recuo">evoluindo: <span class="codigo-azul">true</span></p>
+                        <p>};</p>
+                        <p class="codigo-final">// O próximo projeto começa aqui.</p>
+                    </div>
+                </div>
+
+                <span class="selo selo-um">HTML</span>
+                <span class="selo selo-dois">CSS</span>
+                <span class="selo selo-tres">JS</span>
+            </div>
+        </section>
+
+        <section class="secao sobre" id="sobre">
+            <div class="container">
+                <p class="etiqueta">QUEM SOU EU</p>
+                <h2 class="titulo-secao">Sobre <span>mim</span></h2>
+
+                <div class="sobre-card">
+                    <div class="sobre-simbolo">&lt;/&gt;</div>
+
+                    <div>
+                        <h3>Aprendendo na prática</h3>
+                        <p>
+                            Meu nome é Kaio e estou praticando programação
+                            e desenvolvimento web. Gosto de criar projetos,
+                            experimentar ideias e aprender como as páginas
+                            e aplicações funcionam. Cada trabalho é uma
+                            oportunidade de melhorar minhas habilidades
+                            e descobrir novas possibilidades na tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao container" id="habilidades">
+            <p class="etiqueta">O QUE ESTOU ESTUDANDO</p>
+            <h2 class="titulo-secao">Minhas <span>habilidades</span></h2>
+
+            <div class="habilidades-grid">
+                <article class="habilidade-card">
+                    <div class="habilidade-icone html-icone">5</div>
+                    <h3>HTML</h3>
+                    <p>Estrutura e organização do conteúdo das páginas.</p>
+                </article>
+
+                <article class="habilidade-card">
+                    <div class="habilidade-icone css-icone">#</div>
+                    <h3>CSS</h3>
+                    <p>Estilização, cores, layouts e responsividade.</p>
+                </article>
+
+                <article class="habilidade-card">
+                    <div class="habilidade-icone js-icone">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e funcionalidades para os sites.</p>
+                </article>
+
+                <article class="habilidade-card">
+                    <div class="habilidade-icone figma-icone">F</div>
+                    <h3>Figma</h3>
+                    <p>Criação e organização de interfaces e protótipos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao projetos" id="projetos">
+            <div class="container">
+                <p class="etiqueta">MEUS TRABALHOS</p>
+                <h2 class="titulo-secao">Projetos em <span>destaque</span></h2>
+
+                <p class="texto-secao">
+                    Conheça alguns dos projetos que fazem parte da minha
+                    jornada de aprendizado e desenvolvimento.
+                </p>
+
+                <div class="projetos-grid">
+
+                    <article class="projeto-card">
+                        <div class="projeto-capa capa-figma">
+                            <span class="projeto-numero">01</span>
+                            <div class="figma-ilustracao" aria-hidden="true">
+                                <span class="figma-vermelho"></span>
+                                <span class="figma-laranja"></span>
+                                <span class="figma-roxo"></span>
+                                <span class="figma-azul"></span>
+                                <span class="figma-verde"></span>
+                            </div>
+                            <span class="capa-legenda">UI / UX DESIGN</span>
+                        </div>
+
+                        <div class="projeto-info">
+                            <p class="projeto-tipo">DESIGN DE INTERFACES</p>
+                            <h3>Projetos do Figma</h3>
+                            <p>
+                                Trabalhos de criação de interfaces e
+                                protótipos, explorando a organização visual,
+                                a experiência do usuário e a apresentação
+                                de ideias digitais.
+                            </p>
+
+                            <div class="tecnologias">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Protótipos</span>
+                            </div>
+
+                            <a class="projeto-link"
+                                href="#contato"
+                                aria-label="Solicitar informações sobre os projetos do Figma">
+                                Conhecer projeto <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-capa capa-silencio">
+                            <span class="projeto-numero">02</span>
+                            <div class="silencio-ilustracao" aria-hidden="true">
+                                <span class="silencio-linha"></span>
+                                <span class="silencio-texto">SILÊNCIO</span>
+                            </div>
+                            <span class="capa-legenda">EXPERIÊNCIA DIGITAL</span>
+                        </div>
+
+                        <div class="projeto-info">
+                            <p class="projeto-tipo">PROJETO WEB</p>
+                            <h3>Silêncio e Choques</h3>
+                            <p>
+                                Projeto com uma proposta visual marcante,
+                                utilizando contrastes, tipografia e uma
+                                atmosfera escura para transmitir sua ideia.
+                            </p>
+
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Design</span>
+                            </div>
+
+                            <a class="projeto-link"
+                                href="#contato"
+                                aria-label="Solicitar informações sobre Silêncio e Choques">
+                                Conhecer projeto <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-capa capa-choques">
+                            <span class="projeto-numero">03</span>
+                            <div class="choques-ilustracao" aria-hidden="true">
+                                <span class="choques-linha"></span>
+                                <span class="choques-titulo">CHOQUES<br>E SILÊNCIOS</span>
+                                <span class="choques-subtitulo">
+                                    A psiquiatria entre 1950 e 1960
+                                </span>
+                            </div>
+                            <span class="capa-legenda">HISTÓRIA DA PSIQUIATRIA</span>
+                        </div>
+
+                        <div class="projeto-info">
+                            <p class="projeto-tipo">PESQUISA E DESENVOLVIMENTO</p>
+                            <h3>Choques e Silêncios</h3>
+                            <p>
+                                Site informativo sobre a história da
+                                psiquiatria entre 1950 e 1960, abordando
+                                a eletroconvulsoterapia, a lobotomia,
+                                os medicamentos e os hospitais.
+                            </p>
+
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a class="projeto-link"
+                                href="#contato"
+                                aria-label="Solicitar informações sobre Choques e Silêncios">
+                                Conhecer projeto <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-capa capa-medo">
+                            <span class="projeto-numero">04</span>
+                            <div class="medo-ilustracao" aria-hidden="true">
+                                <span class="medo-circulo"></span>
+                                <span class="medo-titulo">MEDO</span>
+                            </div>
+                            <span class="capa-legenda">EMOÇÕES HUMANAS</span>
+                        </div>
+
+                        <div class="projeto-info">
+                            <p class="projeto-tipo">PROJETO TEMÁTICO</p>
+                            <h3>Sentimento do Medo</h3>
+                            <p>
+                                Projeto dedicado ao sentimento do medo,
+                                explorando a forma de apresentar um tema
+                                humano por meio de uma experiência visual
+                                e de conteúdo digital.
+                            </p>
+
+                            <div class="tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Criatividade</span>
+                            </div>
+
+                            <a class="projeto-link"
+                                href="#contato"
+                                aria-label="Solicitar informações sobre Sentimento do Medo">
+                                Conhecer projeto <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="secao container contato" id="contato">
+            <p class="etiqueta">VAMOS CONVERSAR</p>
+            <h2 class="titulo-secao">Entre em <span>contato</span></h2>
+
+            <p class="texto-secao">
+                Quer saber mais sobre meus projetos ou trocar uma ideia
+                sobre tecnologia? Envie uma mensagem.
+            </p>
+
+            <form class="formulario" id="formulario">
+                <div class="campo">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Seu e-mail</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"
+                        placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="botao botao-principal">
+                    Validar mensagem
+                </button>
+
+                <p id="mensagem-formulario" class="mensagem-formulario"
+                    role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <a href="#inicio" class="logo">Minha<span>Vitrine</span>Dev.</a>
+
+            <p>
+                Desenvolvido por Kaio ·
+                <span id="ano"></span>
+            </p>
+
+            <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
