@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #071629, #0b2d52);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px;
+    border: 2px solid #123c69;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #0b2d52;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    text-align: center;
+    color: #444444;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #777777;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0b2d52;
+    box-shadow: 0 0 0 3px rgba(11, 45, 82, 0.15);
+}
+
+.notas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8px;
+}
+
+.btn-calcular {
+    background-color: #0b2d52;
+    color: #ffffff;
+}
+
+.btn-calcular:hover {
+    background-color: #164b80;
+    transform: translateY(-2px);
+}
+
+.btn-limpar {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #0b2d52;
+}
+
+.btn-limpar:hover {
+    background-color: #222222;
+    transform: translateY(-2px);
+}
+
+.resultado {
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: #f0f4f8;
+    border-left: 5px solid #0b2d52;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.resultado h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #0b2d52;
+}
+
+.aprovado {
+    color: #155724;
+}
+
+.recuperacao {
+    color: #805600;
+}
+
+.reprovado,
+.erro {
+    color: #b00020;
+}
+
+@media (max-width: 420px) {
+    .card {
+        padding: 20px;
+    }
+
+    .notas {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
